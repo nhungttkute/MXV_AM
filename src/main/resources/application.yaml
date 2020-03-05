@@ -1,0 +1,33 @@
+server:
+    port: 9991
+    servlet:
+        context-path: /am
+spring:
+    datasource:
+        url: jdbc:postgresql://209.58.164.25:5432/system_am
+        username: newgen
+        password: N3wG3n@Mxv
+        hikari:
+            connection-timeout: 20000
+            minimum-idle: 10
+            maximum-pool-size: 20
+            idle-timeout: 10000
+            max-lifetime: 1000
+            auto-commit: true
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                    time_zone: UTC
+logging:
+#    config: classpath:logback-spring.xml
+    file: mxv_am
+#    path: C:/u01/apps/AM/log/
+    path: /opt/account-management/log/
+    level:
+        root: OFF
+        org.springframework: OFF
+        com.newgen.am: INFO
