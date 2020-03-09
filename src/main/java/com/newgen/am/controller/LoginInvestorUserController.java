@@ -232,12 +232,16 @@ public class LoginInvestorUserController {
                 if (Utility.isNotNull(input.getTheme())) {
                     user.setTheme(input.getTheme());
                 }
+                if (Utility.isNotNull(input.getFontSize()) && input.getFontSize() > 0) {
+                    user.setFontSize(input.getFontSize());
+                }
                 LoginInvestorUser newUser = investorUserService.save(user, refId);
                 response.setStatus(Constant.RESPONSE_OK);
                 response.setData(new DataObj());
                 response.getData().setLayout(newUser.getLayout());
                 response.getData().setLanguage(newUser.getLanguage());
                 response.getData().setTheme(newUser.getTheme());
+                response.getData().setFontSize(newUser.getFontSize());
             } else {
                 response.setStatus(Constant.RESPONSE_ERROR);
                 response.setErrMsg("This user doesn't exist.");

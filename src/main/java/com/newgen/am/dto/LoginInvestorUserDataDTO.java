@@ -16,6 +16,7 @@ public class LoginInvestorUserDataDTO {
     private String layout;
     private String language;
     private String theme;
+    private Integer fontSize;
 
     public String getUsername() {
         return username;
@@ -88,5 +89,12 @@ public class LoginInvestorUserDataDTO {
     public void setTheme(String theme) {
         this.theme = theme;
     }
-    
+
+    public Integer getFontSize() {
+        return fontSize;
+    }
+
+    public void setFontSize(Integer fontSize) {
+        this.fontSize = fontSize;
+    }
 }

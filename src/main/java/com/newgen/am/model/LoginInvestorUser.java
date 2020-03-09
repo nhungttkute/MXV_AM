@@ -25,6 +25,7 @@ import org.hibernate.annotations.Type;
 @Entity
 @Table(name = "login_investor_users")
 public class LoginInvestorUser extends AuditModel implements Serializable {
+
     @Id
     @SequenceGenerator(name = "SEQ_INV_GEN", sequenceName = "SEQ_INV_USER", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_INV_GEN")
@@ -59,6 +60,7 @@ public class LoginInvestorUser extends AuditModel implements Serializable {
     private String layout;
     private String language;
     private String theme;
+    private Integer fontSize;
     @Type(type = "jsonb")
     @Column(columnDefinition = "json")
     private List<WatchList> watchlists = new ArrayList<>();
@@ -198,5 +200,12 @@ public class LoginInvestorUser extends AuditModel implements Serializable {
     public void setTheme(String theme) {
         this.theme = theme;
     }
-    
+
+    public Integer getFontSize() {
+        return fontSize;
+    }
+
+    public void setFontSize(Integer fontSize) {
+        this.fontSize = fontSize;
+    }
 }

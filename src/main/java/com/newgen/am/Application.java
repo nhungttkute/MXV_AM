@@ -333,6 +333,56 @@ public class Application {
         loginInvUser3.setInvestorId(1);
         loginInvUser3.setInvestorUserId(1);
         
+        LoginInvestorUser loginInvUser4 = new LoginInvestorUser();
+        loginInvUser4.setUsername("usertest1");
+        loginInvUser4.setPassword(passwordEncoder.encode("Usertest@123"));
+        loginInvUser4.setCheckPin(Boolean.TRUE);
+        loginInvUser4.setPin("123456");
+        loginInvUser4.setMemberId(4);
+        loginInvUser4.setBrokerId(1);
+        loginInvUser4.setInvestorId(1);
+        loginInvUser4.setInvestorUserId(1);
+        
+        LoginInvestorUser loginInvUser5 = new LoginInvestorUser();
+        loginInvUser5.setUsername("usertest2");
+        loginInvUser5.setPassword(passwordEncoder.encode("Usertest@123"));
+        loginInvUser5.setCheckPin(Boolean.TRUE);
+        loginInvUser5.setPin("123456");
+        loginInvUser5.setMemberId(4);
+        loginInvUser5.setBrokerId(1);
+        loginInvUser5.setInvestorId(1);
+        loginInvUser5.setInvestorUserId(1);
+        
+        LoginInvestorUser loginInvUser6 = new LoginInvestorUser();
+        loginInvUser6.setUsername("usertest3");
+        loginInvUser6.setPassword(passwordEncoder.encode("Usertest@123"));
+        loginInvUser6.setCheckPin(Boolean.TRUE);
+        loginInvUser6.setPin("123456");
+        loginInvUser6.setMemberId(4);
+        loginInvUser6.setBrokerId(1);
+        loginInvUser6.setInvestorId(1);
+        loginInvUser6.setInvestorUserId(1);
+        
+        LoginInvestorUser loginInvUser7 = new LoginInvestorUser();
+        loginInvUser7.setUsername("usertest4");
+        loginInvUser7.setPassword(passwordEncoder.encode("Usertest@123"));
+        loginInvUser7.setCheckPin(Boolean.TRUE);
+        loginInvUser7.setPin("123456");
+        loginInvUser7.setMemberId(4);
+        loginInvUser7.setBrokerId(1);
+        loginInvUser7.setInvestorId(1);
+        loginInvUser7.setInvestorUserId(1);
+        
+        LoginInvestorUser loginInvUser8 = new LoginInvestorUser();
+        loginInvUser8.setUsername("usertest5");
+        loginInvUser8.setPassword(passwordEncoder.encode("Usertest@123"));
+        loginInvUser8.setCheckPin(Boolean.TRUE);
+        loginInvUser8.setPin("123456");
+        loginInvUser8.setMemberId(4);
+        loginInvUser8.setBrokerId(1);
+        loginInvUser8.setInvestorId(1);
+        loginInvUser8.setInvestorUserId(1);
+        
         // test redis
         RedisUserInfo redisUser = new RedisUserInfo();
         redisUser.setDecryptedAccessToken("Nhung");
@@ -356,8 +406,11 @@ public class Application {
 //            existedMember.setBrokers(brokers);
 //            memberRepo.save(existedMember);
 //            
-//            invUserRepo.save(loginInvUser2);
-//            invUserRepo.save(loginInvUser3);
+//            invUserRepo.save(loginInvUser4);
+//            invUserRepo.save(loginInvUser5);
+//            invUserRepo.save(loginInvUser6);
+//            invUserRepo.save(loginInvUser7);
+//            invUserRepo.save(loginInvUser8);
             
             //Test redis
 //            redisUserInfoRepo.save(redisUser);

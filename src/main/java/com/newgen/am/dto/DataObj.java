@@ -18,6 +18,7 @@ import java.util.List;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class DataObj implements Serializable {
+
     private LoginInvestorUserResponseDTO user;
     private String accessToken;
     private List<UserResponseDTO> users;
@@ -26,6 +27,7 @@ public class DataObj implements Serializable {
     private String layout;
     private String language;
     private String theme;
+    private Integer fontSize;
 
     public LoginInvestorUserResponseDTO getUser() {
         return user;
@@ -91,4 +93,11 @@ public class DataObj implements Serializable {
         this.theme = theme;
     }
 
+    public Integer getFontSize() {
+        return fontSize;
+    }
+
+    public void setFontSize(Integer fontSize) {
+        this.fontSize = fontSize;
+    }
 }

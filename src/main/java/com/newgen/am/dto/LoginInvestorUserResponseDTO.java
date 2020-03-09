@@ -21,6 +21,8 @@ public class LoginInvestorUserResponseDTO {
     private String layout;
     private String language;
     private String theme;
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    private Integer fontSize;
 
     public Integer getId() {
         return id;
@@ -116,6 +118,14 @@ public class LoginInvestorUserResponseDTO {
 
     public void setTheme(String theme) {
         this.theme = theme;
+    }
+
+    public Integer getFontSize() {
+        return fontSize;
+    }
+
+    public void setFontSize(Integer fontSize) {
+        this.fontSize = fontSize;
     }
 
 }
